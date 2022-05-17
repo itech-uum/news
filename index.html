@@ -5,8 +5,10 @@ title: I-TECH's News
 <ul class="list-group">
     {% for post in site.posts %}
     <li class="list-group-item list-group-item-action">
-        <span>{{ post.date | date_to_string }}</span>
-        <a href=".{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        <a href=".{{ post.url }}" title="{{ post.title }}">
+            <span class="text-muted">{{ post.tag }}</span>
+            {{ post.title }}
+        </a>
     </li>
     {% endfor %}
 </ul>

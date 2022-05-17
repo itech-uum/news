@@ -5,6 +5,10 @@
     font-weight: bold;
 }
 
+li a {
+    text-decoration: none;
+}
+
 .content {
     display: flex;
     flex-flow: column;
