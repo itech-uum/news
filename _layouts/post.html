@@ -3,15 +3,17 @@ layout: default
 ---
 <div class="back">
     <nav class="navbar">
-        <a class="navbar-brand" href="/news">&larr; Back</a>
-        <span class="mb-0 h1">{{ page.title }}</span>
+        <div>
+            <a class="navbar-brand h5" href="/news">&larr;</a>
+            <span class="h5">{{ page.title }}</span>
+        </div>
+        
+        <span class="text-muted h5">
+            {{page.date | date_to_string}}
+        </span>
     </nav>
 </div>
 <div>
-    <h1>{{ page.title }}</h1>
-    <p class="border-bottom pb-3 text-muted h5">
-        {{page.date | date_to_string}}
-    </p>
     <div class="w-100 pt-3">
         {{ content }}
     </div>
