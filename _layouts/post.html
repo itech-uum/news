@@ -5,17 +5,20 @@ layout: default
     <nav class="navbar">
         <div>
             <a class="h5" href="/news">&larr;</a>
-            <span class="h5">{{ page.title }}</span>
+            <span class="h5">Back</span>
         </div>
         
         <div>
-        <span class="text-muted h5">
-            {{page.date | date_to_string}}
-        </span>
+        <span class="text-muted h5">I-TECH</span>
         </div>
     </nav>
 </div>
 <div>
+    <h1>{{ page.title }}</h1>
+    <p class="border-bottom pb-3 text-muted h5">
+        {{page.date | date_to_string}}
+    </p>
+
     <div class="w-100 pt-3">
         {{ content }}
     </div>
