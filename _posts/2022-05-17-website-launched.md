@@ -2,7 +2,7 @@
 layout: post
 title: "Website Launched"
 date: 2022-05-17
-tag: "Info"
+tag: "INFO"
 ---
 
 ## Credits
