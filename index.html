@@ -6,8 +6,7 @@ title: I-TECH's News
     {% for post in site.posts %}
     <li class="list-group-item list-group-item-action">
         <a href=".{{ post.url }}" title="{{ post.title }}">
-            <span class="text-muted">{{ post.tag }}</span>
-            {{ post.title }}
+            <span class="bold text-muted">{{ post.tag }}</span> | {{ post.title }}
         </a>
     </li>
     {% endfor %}
