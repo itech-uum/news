@@ -3,7 +3,10 @@
     font-family: sans-serif;
     font-size: 1.5em;
     /*font-weight: bold;*/
-    color: #0d6efe !important;
+}
+
+.link {
+  color: #0d6efe !important;
 }
 
 .bold {
