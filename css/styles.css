@@ -13,7 +13,138 @@ li a {
     text-decoration: none;
 }
 
-.content {
+html, body {
+    height: 100%;
+  }
+  
+  body {
     display: flex;
     flex-flow: column;
-}
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  #root {
+    flex: 100%;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  p {
+    width: fit-content;
+    line-height: 1.8;
+    text-align: justify;
+  }
+  
+  p > img {
+    width: 100%;
+    max-width: 100%;
+    max-height: auto;
+    margin-top: 8px;
+    border-radius: 8px;
+    aspect-ratio: 16/9;
+  }
+  
+  #root {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+  }
+  
+  header {
+    background: linear-gradient(to top,#00000000, #fff, #fff);
+  }
+  
+  footer {
+    background: linear-gradient(to bottom,#00000000, #fff, #fff);
+  }
+  
+  .content {
+    flex: 2;
+  }
+  
+  .center {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .event-poster {
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+  }
+  
+  .home-splash {
+    aspect-ratio: 4/5;
+    border-radius: 8px 8px 0px 0px;
+  }
+  
+  .home-btn {
+    width: 100%;
+    border-radius: 0px 0px 8px 8px;
+  }
+  
+  .scroller {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 35%;
+    gap: .5em;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: inline mandatory;
+  }
+  
+  .fit {
+    display: flex;
+    flex-flow: column;
+    flex: 100%;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 100%;
+    margin-block: 8px;
+  }
+  
+  .scroll-elm {
+    display: grid;
+    grid-template-rows: min-content;
+    gap: 0em;
+    border-radius: 8px;
+    background: #8181ff;
+    color: #f5f5f5;
+    scroll-snap-align: start;
+  }
+  
+  .scroll-elm > div {
+    padding: .5em;
+  }
+  
+  .scroll-elm > div > p {
+    margin: 0px;
+    text-align: start;
+    font-weight: bold;
+    word-break: break-all;
+  }
+  
+  .scroll-elm > img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 8px 8px 0px 0px;
+  }
+  
+  @media (min-width: 768px) {
+    .home-splash {
+      aspect-ratio: 16/9;
+    }
+  }
