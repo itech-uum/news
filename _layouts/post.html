@@ -7,24 +7,20 @@ layout: default
             <div>
                 <a class="h6 link" href="/news">&#10094; Back</a>
             </div>
-        
+
             <div>
                 <a class="h6 text-muted">{{ page.tag }}</a>
             </div>
         </nav>
     </div>
 </header>
-<div class="content fit container-lg">
-    <div class="content">
-        <div>
-            <h1>{{ page.title }}</h1>
-            <small class="bold text-muted">
-                {{page.date | date_to_string}}
-            </small>
-            <hr />
-            <div class="w-100">
-                {{ content }}
-            </div>
-        </div>
+<div class="content container-lg">
+    <h1>{{ page.title }}</h1>
+    <small class="bold text-muted">
+        {{page.date | date_to_string}}
+    </small>
+    <hr />
+    <div class="w-100">
+        {{ content }}
     </div>
 </div>

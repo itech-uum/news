@@ -145,7 +145,7 @@ iframe {
   margin: 0px;
   text-align: start;
   font-weight: bold;
-  word-break: break-all;
+  word-break: break-word;
 }
 
 .scroll-elm>img {
@@ -159,5 +159,9 @@ iframe {
 @media (min-width: 768px) {
   .home-splash {
     aspect-ratio: 16/9;
+  }
+
+  .scroller {
+    grid-auto-columns: 22%;
   }
 }
