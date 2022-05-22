@@ -156,6 +156,15 @@ iframe {
   border-radius: 8px 8px 0px 0px;
 }
 
+.utterances {
+  width: 100%;
+  max-width: 100%;
+}
+
+.utterances-frame {
+  position: static;
+}
+
 @media (min-width: 768px) {
   .home-splash {
     aspect-ratio: 16/9;
