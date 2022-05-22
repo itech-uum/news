@@ -165,6 +165,12 @@ iframe {
   position: static;
 }
 
+svg {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+}
+
 @media (min-width: 768px) {
   .home-splash {
     aspect-ratio: 16/9;
